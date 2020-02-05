@@ -224,8 +224,8 @@ BlueBeasts-Coind: $(OBJS:obj/%=obj/%)
 
 clean:
 	-rm -f BlueBeasts-Coind
-    -rm -f obj/**/*.o
-    -rm -f obj/**/*.P
+	-rm -f obj/**/*.o
+	-rm -f obj/**/*.P
 	-rm -f obj/build.h
 
 FORCE:
