@@ -63,7 +63,7 @@ cd ~; sudo fallocate -l 3G /swapfile; ls -lh /swapfile; sudo chmod 600 /swapfile
 
 ### Dependencies install
 ```
-cd ~; sudo apt-get install -y ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev libcurl4-openssl-dev curl libzip-dev; apt-get update -y; apt-get install -y git make automake build-essential libboost-all-dev; apt-get install -y yasm binutils libcurl4-openssl-dev openssl libssl-dev; sudo apt-get install -y libgmp-dev; sudo apt-get install -y libtool; cd ~;
+cd ~; sudo apt-get install -y ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev libcurl4-openssl-dev curl libzip-dev; apt-get update -y; sudo apt-get install -y git make automake build-essential libboost-all-dev; apt-get install -y yasm binutils libcurl4-openssl-dev openssl libssl-dev; sudo apt-get install -y libgmp-dev; sudo apt-get install -y libtool; cd ~;
 ```
 
 ### Dependencies build and link
@@ -94,29 +94,7 @@ rpcport=47444
 port=47224
 rpcconnect=127.0.0.1
 rpcallowip=127.0.0.1
-addnode=207.148.27.92
-addnode=45.76.62.163
-addnode=188.166.109.87
-addnode=68.183.146.51
-addnode=80.211.2.103
-addnode=84.113.44.78
-addnode=93.100.163.137
-addnode=95.66.140.59
-addnode=66.176.232.29
-addnode=45.32.10.58
-addnode=37.53.34.2
-addnode=37.232.178.182
-addnode=24.11.24.196
-addnode=202.229.49.182
-addnode=201.75.101.163
-addnode=176.114.7.216
-addnode=139.228.206.17
-addnode=13.67.38.233
-addnode=13.67.106.233
-addnode=122.196.137.109
-addnode=114.219.150.58
-addnode=104.238.62.81
-addnode=103.84.143.25
+addnode=192.3.188.58
 CONFIG
 chmod 700 ~/.TBB/BlueBeasts-Coin.conf; chmod 700 ~/.TBB; ls -la ~/.TBB
 ```
