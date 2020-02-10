@@ -68,17 +68,17 @@ cd ~; sudo apt-get install -y ntp git build-essential libssl-dev libdb-dev libdb
 
 ### Dependencies build and link
 ```
-cd ~; wget http://download.oracle.com/berkeley-db/db-6.2.32.NC.tar.gz; tar zxf db-6.2.32.NC.tar.gz; cd db-6.2.32.NC/build_unix; ../dist/configure --enable-cxx; make; sudo make install; sudo ln -s /usr/local/BerkeleyDB.6.2/lib/libdb-6.2.so /usr/lib/libdb-6.2.so; sudo ln -s /usr/local/BerkeleyDB.6.2/lib/libdb_cxx-6.2.so /usr/lib/libdb_cxx-6.2.so; export BDB_INCLUDE_PATH="/usr/local/BerkeleyDB.6.2/include"; export BDB_LIB_PATH="/usr/local/BerkeleyDB.6.2/lib" cd ~;
+cd ~; wget http://download.oracle.com/berkeley-db/db-6.2.32.NC.tar.gz; tar zxf db-6.2.32.NC.tar.gz; cd db-6.2.32.NC/build_unix; ../dist/configure --enable-cxx; make; sudo make install; sudo ln -s /usr/local/BerkeleyDB.6.2/lib/libdb-6.2.so /usr/lib/libdb-6.2.so; sudo ln -s /usr/local/BerkeleyDB.6.2/lib/libdb_cxx-6.2.so /usr/lib/libdb_cxx-6.2.so; export BDB_INCLUDE_PATH="/usr/local/BerkeleyDB.6.2/include"; export BDB_LIB_PATH="/usr/local/BerkeleyDB.6.2/lib"; cd ~;
 ```
 
 ### GitHub pull (Source Download)
 ```
-cd ~; git clone https://github.com/SaltineChips/Bluebeasts
+cd ~; git clone https://github.com/exobytecoin/BlueBeasts
 ```
 
 ### Build BlueBeasts daemon
 ```
-cd ~; cd ~/BlueBeasts/src; chmod a+x obj; chmod a+x leveldb/build_detect_platform; chmod a+x secp256k1; chmod a+x leveldb; chmod a+x ~/BlueBeasts/src; chmod a+x ~/BlueBeasts; make -f ~/BlueBeasts/src/makefile/makefile.unix USE_UPNP=-; cd ~; cp -r ~/BlueBeasts/src/BlueBeasts-Coind /usr/local/bin/BlueBeasts-Coind;
+cd ~; cd ~/BlueBeasts/src; chmod a+x obj; chmod a+x leveldb/build_detect_platform; chmod a+x secp256k1; chmod a+x leveldb; chmod a+x ~/BlueBeasts/src; chmod a+x ~/BlueBeasts; make -f ~/BlueBeasts/src/makefile.unix USE_UPNP=-; cd ~; cp -r ~/BlueBeasts/src/BlueBeasts-Coind /usr/local/bin/BlueBeasts-Coind;
 ```
 
 ### Create config file for daemon
